@@ -67,6 +67,22 @@
 
     console.log("hello from internal js");
 
+    //Exercise 4
+    var username = 'codeup';
+    var password = 'notastrongpassword';
+
+    var isFiveCharacters = password.length >=5;
+    console.log(isFiveCharacters);
+
+    var passwordIncludeUsername=password.indexOf(username)!==-1;
+    console.log(passwordIncludeUsername);
+
+    var isTwentyCharacters = username >20;
+    console.log(isTwentyCharacters);
+
+    var hasWhitespaces =(username.trim()!==username) || (password.trim()!==password)
+    console.log(hasWhitespaces);
+
 </script>
 
 
