@@ -14,3 +14,13 @@ function litres(time) {
 }
 
 console.log(litres(2));
+
+//Write a program that finds the summation of every number from 1 to num.
+// The number will always be a positive integer greater than 0.
+
+var summation = function (num) {
+    var sum =0;
+    for(var i =1;i<=num; i=i+1){
+        sum=sum+i}
+    return sum;
+}
