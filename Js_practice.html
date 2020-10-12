@@ -316,6 +316,31 @@
 function sideThree(sideOne,sideTwo){
 	return (sideOne+sideTwo)-1;
 }
+
+//Create a function that takes a number (from 1 to 12) and returns its corresponding month name as a string.
+function monthName(num) {
+	var month =['January','February','March','April','May','June','July','August','September','October','November','December']
+	switch (num){
+		case 1: return month[0];
+		case 2: return month[1];
+		case 3: return month[2];
+		case 4: return month[3];
+		case 5: return month[4];
+		case 6: return month[5];
+		case 7: return month[6];
+		case 8: return month[7];
+		case 9: return month[8];
+		case 10: return month[9];
+		case 11: return month[10];
+		case 12: return month[11];
+		default :console.log("enter a valid number ");
+			break;
+	}
+}
+
+
+
+
 </script>
 </body>
 </html>
