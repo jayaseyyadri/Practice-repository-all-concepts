@@ -6,3 +6,11 @@ function helloWorld(){
 }
 
 helloWorld();
+
+//wrute a fubction which given  time in hours , returns the number of litres Natty will drink, rounded to the smallest value.
+function litres(time) {
+    var litre=.5;
+    return Math.floor(time*litre);                                                                                 ;
+}
+
+console.log(litres(2));
