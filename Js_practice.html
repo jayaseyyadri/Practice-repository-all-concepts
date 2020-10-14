@@ -346,7 +346,14 @@ console.log(fruits);
 
 ///Create a function that takes an array of numbers and returns the smallest number in the set.
 
-
+function findSmallestNum(arr) {
+	var check=arr[0];
+	for(var i=0;i<arr.length;i++){
+		if(arr[i]<=check){
+			check= arr[i]
+		}
+	}return check
+}
 
 //Create a variable named states and assign it an array of strings containing the following names of states
 //Texas,RhodeIsland,Massachusetts,NewYork
