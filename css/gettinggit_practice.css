@@ -1,0 +1,43 @@
+
+header{
+background-color: #d42b2b;
+    color:white;
+    text-align: center;
+    margin:0px;
+    padding:0px;
+    width: 130%;
+    box-sizing:border-box;
+
+}
+body{
+    font-family: Arial;
+    width: 80%;
+}
+h1{
+    font-size: 150px;
+    font-family: cursive;
+}
+h2{
+    text-align: center;
+
+}
+h3{
+    font-family: Arial;
+    text-align: center;
+    font-weight: lighter;
+}
+.logInButton{
+    color:white;
+    background-color: #d42b2b;
+    border: 1px white;
+    border-radius: 2px;
+}
+p{
+    font-family: Arial;
+
+}
+
+#gitInit{
+    font-family: "Courier New";
+}
+log
