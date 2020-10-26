@@ -377,6 +377,17 @@ function ageInDays(age){
 	return age*365;
 }
 
+//function to return an array without the word null
+function noNull(arr){
+	var newArr=[];
+	arr.forEach(function (arrs){
+		if(arrs!== null){
+			newArr.push(arrs)
+		}
+	});
+	return newArr;
+}
+
 </script>
 </body>
 </html>
