@@ -1,0 +1,12 @@
+.toDoList{
+    display: flex;
+    flex-direction: row;
+    background-color: #d42b2b;
+    justify-content: space-evenly;
+}
+a:hover{
+    color: #408000;
+}
+li{
+  ;
+}
