@@ -8,8 +8,12 @@
     }
 
 
-
-
+//get user input  for 2 integers and display (sum,diffrence,product,quotient,remainder )
+function mathOpeertaion(numberOne,numbertwo){
+    window.prompt("Num1: ")
+    window.prompt("Num2:  ")
+    }
+    
 
 
 
