@@ -15,7 +15,7 @@ function draw(e) {
         circle.moveTo(lastX,lastY);
         circle.arc(e.offsetX,e.offsetY,20,30,180,false);
         [lastX, lastY] = [e.offsetX, e.offsetY];
-\        // [lastX, lastY] = [e.offsetX, e.offsetY];
+        // [lastX, lastY] = [e.offsetX, e.offsetY];
     }
     }
 
