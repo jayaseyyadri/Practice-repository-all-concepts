@@ -13,7 +13,7 @@ function draw(e) {
         // ctx.stroke();
         circle.beginPath();
         circle.moveTo(lastX,lastY);
-        circle.arc(e.offsetX,e.offsetY,20,30,180,false);
+        circle.arc(e.offsetX,e.offsetY,20,0,360,false);
         [lastX, lastY] = [e.offsetX, e.offsetY];
         // [lastX, lastY] = [e.offsetX, e.offsetY];
     }
