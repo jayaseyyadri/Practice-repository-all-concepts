@@ -11,10 +11,12 @@ function submitAnswers(){
 
     //validation
     for(var i=1;i<=total;i++){
-        if(eval('q'+i)=='' || eval('q'+i) =='null'){
-            alert("you missed question"+ i)
+        if(eval('q'+i)=='' || eval('q'+i) =='null') {
+            alert("you missed question" + i)
+            return false
         }
     }
 
-    return false
+
 }
+

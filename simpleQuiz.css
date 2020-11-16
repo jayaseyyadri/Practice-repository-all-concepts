@@ -26,14 +26,16 @@ h1{
     border: 0;
     color: #fff;
     padding: 10px 15px;
+    margin: 20px 0 0 20px;
     cursor: pointer;
 
 }
 
 #results{
-    background-color: #f06226;
+    background-color: #199fdb;
     padding: 10px 20px;
     margin: 10px 0;
+    color: white;
 }
 span{
     color: white;
