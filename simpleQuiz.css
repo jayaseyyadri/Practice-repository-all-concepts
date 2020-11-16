@@ -1,0 +1,41 @@
+body{
+    background-color: #f06226;
+    color: white;
+    font-family: Arial,sans-serif;
+    font-weight: 14px;
+}
+#container{
+    background-color: #199fdb;
+    width: 60%;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+}
+header{
+    text-align: center;
+    border-bottom: #fff dashed 1px;
+}
+
+h1{
+    padding: 0;
+    margin:0;
+}
+
+#sbmt{
+    background-color:#f06226;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+#results{
+    background-color: #f06226;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+span{
+    color: white;
+    font-weight: bold;
+}
