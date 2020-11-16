@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,39 +7,44 @@
     <title>Practicing jQuery</title>
     <link rel="stylesheet" href="practice.css">
 </head>
-<body>
+
 
 <h1 id="hello"> Like food ? You are in the right page !</h1>
 <p>Foodies !!
-<br>
+    <br>
     What's your favorite food?</p>
-<input type="text" id="inputBox" placeholder="Enter food here">
-<button type="submit">Chomp </button>
+<input type="text" id="inputBox" name="inputBox" placeholder="Enter food here" >
+<button type="submit" id="Chomp">Chomp </button>
 <p>More than 1 favorite food? Let's list them !</p>
-
-<ul> The lethal 3 ..
+<ul id="mainList"> The lethal 3 ..
     <li>Pizza</li>
     <li>Cheese</li>
     <li>Chocolate</li>
 </ul>
 
-
 <script src="jquery-2.2.4%20(own).js" rel="script"></script>
 
 <script>
+
     $(document).ready(function (){
-$('h1').css('color','blue');
-$('h1').on('click',function (){
-    $('#hello').hide();
-})
-$('h1').html();
+        function addListItem() {
+
+            var userInput = $('#inputBox').val();
+            if(userInput.trim()==='') {
+                alert("Please enter a value");
+                return;
+            }
+            var listItem = $('<li />');
+            listItem.html(userInput);
+            $('#inputBox').val('');
+            $('#inputBox').focus();
+            $("#mainList").append(listItem);
+            $("#mainList").fadeOut("slow").fadeIn("slow");
+        }
 
 
-
-
-
-
-    })
+        $('#Chomp').on('click',addListItem)
+    });
 
 </script>
 
