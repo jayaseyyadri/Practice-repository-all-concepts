@@ -21,7 +21,7 @@ function submitAnswers() {
     var answers = ['a', 'b', 'b', 'a', 'c'];
 
     //check answers
-    for (var i = 1; i <= total; i++) {
+    for (i = 1; i <= total; i++) {
         if (eval('q' + i) == answers[i - 1]) {
             score++
         }
