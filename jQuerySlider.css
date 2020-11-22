@@ -1,4 +1,4 @@
-*{
+{
     margin:0;
     padding: 0;
 }
@@ -39,9 +39,6 @@ img{
     width: 940px;
     height: 350px;
 }
-
-
-
 
 .red{
     color:red;
