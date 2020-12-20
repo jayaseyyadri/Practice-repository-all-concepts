@@ -20,21 +20,22 @@ h1{
     margin-bottom:20px;
 }
 #container{
- width: 980px;
-    margin: 40px auto;
-    overflow: hidden;
+    width:980px;
+    margin:40px auto;
+    overflow:hidden;
 }
 
 #slider{
-    width: 940px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
+    width:940px;
+    height:350px;
+    position:relative;
+    overflow:hidden;
     float: left;
-    padding: 3px;
-    border:   #507cff solid 2px;
+    padding:3px;
+    border:#507cff solid 2px;
     border-radius:5px;
 }
+
 .slide{
     width: 940px;
     height: 350px;
@@ -47,8 +48,8 @@ h1{
     color:green;
 }
 
-#prev #next{
-float:left;
+#prev,#next{
+    float:left;
     margin-top: 130px;
     cursor: pointer;
     position:relative;
