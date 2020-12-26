@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+.banner {
+    text-align: center;
+    color: red;
+    text-shadow: 0 0 3px #12a6b9, 0 0 5px #000000;
+    border: 2px dashed blue;
+}
