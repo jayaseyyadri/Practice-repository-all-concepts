@@ -7,3 +7,7 @@ body {
     text-shadow: 0 0 3px #12a6b9, 0 0 5px #000000;
     border: 2px dashed blue;
 }
+img{
+    margin-left: 100px;
+    margin-right: 100px;
+}
