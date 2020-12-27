@@ -6,15 +6,20 @@
 </head>
 
 <body>
-<div id="app"></div>
 <h1 class="banner">Merry Christmas & Happy Holidays !!</h1>
-<p>My favorite chirstmas songs!!</p>
-<ul class="songs">
+<p>My favorite christmas songs!!</p>
+<ul id="songsList">
     <li><a href="https://www.youtube.com/watch?v=eQ34DSTjsLQ&vl=en">Jingle Bells</a> </li>
     <li><a href="https://www.youtube.com/watch?v=VjL031bE9FA">Rudolph the red nose reindeer</a> </li>
     <li><a href="https://www.youtube.com/watch?v=30OaM6b48k8">Joy to the world</a></li>
 </ul>
-<img src="img/tree.jpg" />
+<input type="text" placeholder="Enter a song that you would like to add" name="addMovie" id="addUserMovie" size="50%">
+<button type="submit" id="submit-btn">Add</button>
+<br><p></p>
+
+<img src="img/tree.jpg" alt="Christmas Tree" size="width:50%">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="holidays.js"></script>
 
 </body>
 </html>
