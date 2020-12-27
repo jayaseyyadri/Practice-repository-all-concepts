@@ -6,7 +6,7 @@ $(document).ready(function (){
     })
 $('#url-btn').click(function () {
     var userInput= $('#q').val();
-    url="https://www.youtube.com/results?search_query"
+    url="https://www.youtube.com/results?search_query="
     window.location.href = url + userInput ;
 });
 
