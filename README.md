@@ -1,3 +1,3 @@
 # second-repository
 
- A repositorty for practicing diffrent concepts learnt
+ # A repositorty for practicing different concepts learnt
