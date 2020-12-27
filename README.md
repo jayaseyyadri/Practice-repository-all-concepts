@@ -1,3 +1,3 @@
 # second-repository
 
-      A simple Js Quiz using basic HTML & CSS & JS
+ A repositorty for practicing diffrent concepts learnt
