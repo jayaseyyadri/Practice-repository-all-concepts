@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Java101Exercises {
 
@@ -22,13 +23,13 @@ public class Java101Exercises {
          *
          * LEVEL: BASIC
          *
-         * @param a     First number to add
-         * @param b     Second number to add
+         * @param //a     First number to add
+         * @param// b     Second number to add
          * @return      The sum
          */
         public static void main(String[] args) {
 //           System.out.println( addInts001(2,3));
-            System.out.println(sayHello002("mrinal"));
+           // System.out.println(sayHello002("mrinal"));
         }
         public static int addInts001(int a, int b) {
             // TODO: Write code here
@@ -89,7 +90,8 @@ public class Java101Exercises {
          */
         public static double addDouble004(double a, double b) {
             // TODO: Write code here
-            return 0.0;
+             double sum = a+b;
+             return  sum;
         }
 
         /**
@@ -104,7 +106,7 @@ public class Java101Exercises {
          */
         public static String concatenateStrings005(String a, String b) {
             // TODO: Write code here
-            return null;
+            return  a +" "+ b;
         }
 
         /**
@@ -120,6 +122,9 @@ public class Java101Exercises {
          */
         public static boolean isEqual006(int a, int b) {
             // TODO: Write code here
+            if(a==b){
+                return true;
+            }
             return false;
         }
 
@@ -136,6 +141,9 @@ public class Java101Exercises {
          */
         public static boolean isGreaterThan007(double a, double b) {
             // TODO: Write code here
+            if(a>b){
+                return true;
+            }
             return false;
         }
 
@@ -148,7 +156,7 @@ public class Java101Exercises {
          * @return      The cubed value of the number.
          */
         public static double cube008(double a) {
-            return 0.0;
+            return Math.pow(a,3);
         }
 
         /**
@@ -163,9 +171,8 @@ public class Java101Exercises {
          */
         public static int calcPositiveDifference009(int a, int b) {
             // TODO: Write code here
-            return 0;
+            return Math.abs(a-b);
         }
-
         /**
          * Exercise 010 - Remainder
          * Write a method that accepts two integers and returns the remainder from the division .
@@ -178,6 +185,7 @@ public class Java101Exercises {
          */
         public static int calcRemainder010(int a, int b) {
             // TODO: Write code here
+            return a % b;
             return 0;
         }
 
@@ -196,7 +204,24 @@ public class Java101Exercises {
          */
         public static double preformIndicatedOperation011(String operation, double op1, double op2) {
             // TODO: Write code here
-            return 0;
+            Scanner scanner= new Scanner(System.in);
+            System.out.println("enter an operator from the following \n + - * /");
+            operation= scanner.next();
+            double result;
+            if (operation.equals("ADD")) {
+                System.out.println(" You selected + the result is : ");
+                return result = op1 + op2;
+            }else if(operation.equals("SUB")) {
+                System.out.println(" You selected - the result is : ");
+                return result = op1-op2;
+            }else if(operation.equals("MUL")) {
+                System.out.println(" You selected * the result is : ");
+                return result = op1*op2;
+            }else if(operation.equals("DIV")){
+                System.out.println(" You selected / the result is : ");
+                return result = op1/op2;
+            }
+            else return 0.0;
         }
 
         /**
@@ -208,10 +233,13 @@ public class Java101Exercises {
          * @param num       The number to be factored
          * @return          An Integer ArrayList of factors of num.
          */
-        public static ArrayList<Integer> findFactors012(int num) {
-            // TODO: Write code here
-            return  null;
-        }
+//        public static ArrayList<Integer> findFactors012(int num) {
+//            // TODO: Write code here
+//           Scanner scanner = new Scanner(System.in);
+//           scanner.nextInt();
+//            if ()
+//            return  null;
+//        }
 
         /**
          * Exercise 013 - Get Nearest Integer to Real Sum
