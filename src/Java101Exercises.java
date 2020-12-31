@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Java101Exercises {
 
@@ -22,13 +23,13 @@ public class Java101Exercises {
          *
          * LEVEL: BASIC
          *
-         * @param a     First number to add
-         * @param b     Second number to add
+         * @param //a     First number to add
+         * @param// b     Second number to add
          * @return      The sum
          */
         public static void main(String[] args) {
 //           System.out.println( addInts001(2,3));
-            System.out.println(sayHello002("mrinal"));
+           // System.out.println(sayHello002("mrinal"));
         }
         public static int addInts001(int a, int b) {
             // TODO: Write code here
@@ -89,7 +90,8 @@ public class Java101Exercises {
          */
         public static double addDouble004(double a, double b) {
             // TODO: Write code here
-            return 0.0;
+             double sum = a+b;
+             return  sum;
         }
 
         /**
@@ -104,7 +106,7 @@ public class Java101Exercises {
          */
         public static String concatenateStrings005(String a, String b) {
             // TODO: Write code here
-            return null;
+            return  a +" "+ b;
         }
 
         /**
@@ -120,6 +122,9 @@ public class Java101Exercises {
          */
         public static boolean isEqual006(int a, int b) {
             // TODO: Write code here
+            if(a==b){
+                return true;
+            }
             return false;
         }
 
@@ -136,6 +141,9 @@ public class Java101Exercises {
          */
         public static boolean isGreaterThan007(double a, double b) {
             // TODO: Write code here
+            if(a>b){
+                return true;
+            }
             return false;
         }
 
@@ -148,7 +156,7 @@ public class Java101Exercises {
          * @return      The cubed value of the number.
          */
         public static double cube008(double a) {
-            return 0.0;
+            return Math.pow(a,3);
         }
 
         /**
@@ -163,9 +171,8 @@ public class Java101Exercises {
          */
         public static int calcPositiveDifference009(int a, int b) {
             // TODO: Write code here
-            return 0;
+            return Math.abs(a-b);
         }
-
         /**
          * Exercise 010 - Remainder
          * Write a method that accepts two integers and returns the remainder from the division .
@@ -178,7 +185,7 @@ public class Java101Exercises {
          */
         public static int calcRemainder010(int a, int b) {
             // TODO: Write code here
-            return 0;
+            return a % b;
         }
 
         /**
@@ -196,7 +203,24 @@ public class Java101Exercises {
          */
         public static double preformIndicatedOperation011(String operation, double op1, double op2) {
             // TODO: Write code here
-            return 0;
+            Scanner scanner= new Scanner(System.in);
+            System.out.println("enter an operator from the following \n + - * /");
+            operation= scanner.next();
+            double result;
+            if (operation.equals("ADD")) {
+                System.out.println(" You selected + the result is : ");
+                return result = op1 + op2;
+            }else if(operation.equals("SUB")) {
+                System.out.println(" You selected - the result is : ");
+                return result = op1-op2;
+            }else if(operation.equals("MUL")) {
+                System.out.println(" You selected * the result is : ");
+                return result = op1*op2;
+            }else if(operation.equals("DIV")){
+                System.out.println(" You selected / the result is : ");
+                return result = op1/op2;
+            }
+            else return 0.0;
         }
 
         /**
@@ -208,10 +232,13 @@ public class Java101Exercises {
          * @param num       The number to be factored
          * @return          An Integer ArrayList of factors of num.
          */
-        public static ArrayList<Integer> findFactors012(int num) {
-            // TODO: Write code here
-            return  null;
-        }
+//        public static ArrayList<Integer> findFactors012(int num) {
+//            // TODO: Write code here
+//           Scanner scanner = new Scanner(System.in);
+//           scanner.nextInt();
+//            if ()
+//            return  null;
+//        }
 
         /**
          * Exercise 013 - Get Nearest Integer to Real Sum
@@ -354,5 +381,86 @@ public class Java101Exercises {
         public static int convertRomanNumeral072(String romanNumeral) {
             return 0;
         }
-    }
+
+//
+//
+//
+//
+
+/*Implement a function , that takes an integer and returns the sum of the factorials of each digit of n.
+    For example, if number is equal to 145, we want the sum of 1! + 4! + 5!
+
+    int factorialDigits(int number)
+
+    Example: factorialDigits(321)
+
+    Result: 9
+
+    Fibonacci sequence
+    Implement a function, which takes an integer n and returns a number, which is formed by concatenating the first n Fibonacci numbers.
+
+    For example, if n = 3, the result must be 112.
+
+    int fibonacciSequence(int number)
+
+    Example: fibonacciSequence(5)
+
+    Result: 11235
+
+    Is a given number palindrome
+    Implement a function, which takes an integer number and checks if the given number is palindrome.
+
+    For example, the integer 121 is palindrome, but 12340321 - not!
+
+    boolean isPalindrome(int number)
+
+    Example: isPalindrome(12321)
+
+    Result: true
+
+    Reverse the odd words in string
+    Implement a function, which takes a string and returns a string object containing reversed only the words of odd index.
+
+            String reverseOddWords(String sentence)
+
+    Example: reverseOddWords(This is the first lecture for Programming 101 with Java)
+
+    Result: This si the tsrif lecture rof Programming 101 with avaJ
+
+    Check the sum of number and reversedNumber is palindrome
+    Write a function, which takes a number and returns boolean if the sum of the number and it's reversed number is palindrome.
+
+    boolean isSumPalindrome(int input)
+
+    Example: isSumPalindrome(123)
+
+    Result: true
+
+            123 + 321 = 444
+
+    Find the sum of the divisors in array from numberA to numberB
+    Implement a function, which takes two integer numbers and returns the sum of the divisors from each number in the sequence from numberA to numberB
+
+    int sumOfDivisors(int numberA, numberB)
+
+    Example: sumOfDivisors(4, 7)
+
+    Divisors of 4: 4, 2, 1 Divisors of 5: 5, 1 Divisors of 6: 6, 3, 2, 1 Divisors of 7: 7, 1
+
+    Result: 33
+
+    Check the number of vowels, consonants and digits in string
+    Implement a function, which takes a string sentence and returns the number of the vowels, consonants and numbers in the given string object.
+
+            String [] vowelsConsonantsDigits(String sentence)
+
+    Example: vowelsConsonantsDigits("It is 18th of Oct 2016")
+
+    Result: ["Vowels: 4", "Consonants: 7", "Digits: 6"]
+
+*/
+
+
+
+}
 
