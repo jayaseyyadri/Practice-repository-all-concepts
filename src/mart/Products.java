@@ -1,22 +1,53 @@
 package mart;
 
 public class Products {
+    private int productID;
+    private double price;
+    private int quantity;
+    private String name;
+
+    public Products(int productID, double price, int quantity, String name) {
+        this.productID = productID;
+        this.price = price;
+        this.quantity = quantity;
+        this.name = name;
+
+    }
+    public int getProductID() {
+        return productID;
+    }
+
+    public void setProductID(int productID) {
+        this.productID = productID;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 
 }
 
-
-
-
-//  person class with properties of
-//     first name and last name.
-//
-//      method that gives them the ability to ring up a cart or products
-//        jupiter mart carries computers and cell phones.
-//        These products should all have product ids and prices
-//        cell phones should have properties for OS and screen size
-//        computers should have properties for whether it is a laptop or not (boolean) and OS
-//
-//        add a class to hold your main method.
 //        in your main method create products (computers and phones) for a customer to purchase
 //        in your main method create a data structure of your choice called shoppingCart.  Add the products you have created.
 //        create a cashier to work in Jupiter Mart
