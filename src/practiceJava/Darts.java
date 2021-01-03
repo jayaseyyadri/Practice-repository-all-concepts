@@ -10,18 +10,20 @@ public class Darts {
 
     */
 
-    public class Darts {
+    //instance variables
         private double x2;
         private double y2;
         private double distance;
+
+
+        //method to calculate distance between 2 points
         Darts(double x, double y) {
             distance = Math.sqrt(Math.pow(x2-x,2)+ Math.pow(y2-y,2));
-
-            // throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
         }
 
-        int score() {
 
+        //method for returning score
+       public int score() {
             int points =0;
             if (distance == 0 || distance < 1  ){
                 return points =10;
@@ -32,7 +34,6 @@ public class Darts {
             }
             return points;
 
-            // throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
         }
 
     }
