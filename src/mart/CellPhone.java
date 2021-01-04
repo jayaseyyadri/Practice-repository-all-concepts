@@ -1,10 +1,16 @@
 package mart;
 
 public class CellPhone extends Products{
+
     private String operatingSystem;
     private int screenSize;
 
+    //constructor
+    public CellPhone(int productID, double price, int quantity, String name) {
+        super(productID, price, quantity, name);
+    }
 
+    //getters & setters
     public String getOperatingSystem() {
         return operatingSystem;
     }
@@ -22,11 +28,5 @@ public class CellPhone extends Products{
     }
 
 
-    public CellPhone(int productID, double price, int quantity, String name) {
-        super(productID, price, quantity, name);
-    }
+
 }
-
-
-
-//        cell phones should have properties for OS and screen size
