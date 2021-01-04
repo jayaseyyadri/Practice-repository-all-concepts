@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.List;
-public class santaFIleIo {
+public class SantaFIleIo {
 
     public class FileReader {
         // properties for this class

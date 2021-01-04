@@ -3,19 +3,21 @@ package mart;
 import java.util.ArrayList;
 
 public class Person {
+
+    private Object Products;// should be an object or an array list?
+
     private String firstName;
     private String lastName;
-    private ArrayList<String> products =new ArrayList<>();
 
 
     //constructor
-    public Person(String firstName, String lastName, ArrayList<String> products) {
+    public Person(String firstName, String lastName, Object products1) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.products = products;
+        Products = products1;
     }
 
-//getters & setters
+    //getters & setters
     public String getFirstName() {
         return firstName;
     }
@@ -30,14 +32,6 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public ArrayList<String> getProducts() {
-        return products;
-    }
-
-    public void setProducts(ArrayList<String> products) {
-        this.products = products;
     }
 
 }

@@ -1,18 +1,23 @@
 package mart;
 
 public class Products {
+
     private int productID;
     private double price;
     private int quantity;
     private String name;
 
+
+    //Constructor
     public Products(int productID, double price, int quantity, String name) {
         this.productID = productID;
         this.price = price;
         this.quantity = quantity;
         this.name = name;
-
     }
+
+
+    //getters & setters
     public int getProductID() {
         return productID;
     }
@@ -48,7 +53,3 @@ public class Products {
 
 }
 
-//        in your main method create products (computers and phones) for a customer to purchase
-//        in your main method create a data structure of your choice called shoppingCart.  Add the products you have created.
-//        create a cashier to work in Jupiter Mart
-//        this cashier should ring up the products in shoppingCart
