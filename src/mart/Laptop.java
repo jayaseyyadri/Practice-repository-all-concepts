@@ -8,7 +8,7 @@ public class Laptop extends Products{
    private boolean isLaptop;
 
     //constructors
-    public Laptop(String operatingSystem,int screenSize, double memory,  boolean isLaptop) {
+    public Laptop(String operatingSystem,double screenSize, double memory,  boolean isLaptop) {
         super(1,200.00,1,"Toshiba" );
     }
 
