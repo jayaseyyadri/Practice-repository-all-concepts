@@ -11,6 +11,7 @@ public class MartTest {
         Products cellPhone = new CellPhone(1, 22.22, 1, "Iphone");
         Products Laptop = new Laptop("windows10", 1120, 123.80, true);
         Person cashier = new Person("jaya", "seyyadri");
+
         shoppingCart.add(cellPhone);
         shoppingCart.add(Laptop);
 
