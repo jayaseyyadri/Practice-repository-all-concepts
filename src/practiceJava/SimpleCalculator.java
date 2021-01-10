@@ -46,7 +46,7 @@ public class SimpleCalculator {
             return division;
         }
 
-        public static void main(String[] args) {
+        public static void main(StringRepetition[] args) {
             practiceJava.SimpleCalculator calculator =new practiceJava.SimpleCalculator();
             calculator.setFirstNumber(9);
             calculator.setSecondNumber(22);
