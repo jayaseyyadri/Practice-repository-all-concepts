@@ -7,7 +7,7 @@ public class digitsOfNumber {
         while (number1 != 0) {
             number1=number1 / 10;
             count++;
-//            System.out.println(number1);
+            System.out.println(number1);
             System.out.println(count);
         }
     }
