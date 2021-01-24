@@ -1,3 +1,7 @@
 # second-repository
 
- # A repositorty for practicing different concepts learnt
+ # A repository for practicing different concepts learnt
+ 
+ Java <br>
+ Coding bat Problems <br>
+ 
