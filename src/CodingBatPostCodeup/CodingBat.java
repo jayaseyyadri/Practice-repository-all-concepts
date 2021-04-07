@@ -98,6 +98,19 @@ public static boolean shareDigit(int a, int b) {
 
     /**Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form "7:00" indicating when the alarm clock should ring. Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00". Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".s*/
 
+    public  static String alarmClock(int day, boolean vacation) {
+        if ((day == 0 && vacation ) || (day == 6 && vacation)){
+            return "off";
+        }else if ((day != 0 && vacation) && (day != 6 && vacation)){
+            return "10:00";
+        }else if ((day != 0 && !vacation ) && (day != 6 && !vacation )){
+            return "7:00";
+        }else if((day == 0 && !vacation) || (day ==6  && !vacation)){
+            return "10:00";
+        }else
+            return "error";
+
+    }
     public static void main(String[] args) {
         System.out.println(CodingBat.blueTicket(9,1,0));
         System.out.println(CodingBat.shareDigit(11,22));
@@ -105,6 +118,7 @@ public static boolean shareDigit(int a, int b) {
         System.out.println(CodingBat.redTicket(22,45,67));
         System.out.println(CodingBat.maxMod5(20,10));
         System.out.println(CodingBat.sortaSum(2,5));
+        System.out.println(CodingBat.alarmClock(6,false));
 
  }
 
