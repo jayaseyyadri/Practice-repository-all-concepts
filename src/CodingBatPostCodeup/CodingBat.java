@@ -120,7 +120,31 @@ public static boolean shareDigit(int a, int b) {
        return false;
    }
 
+   /**Given a number n, return true if n is in the range 1..10, inclusive. Unless outsideMode is true, in which case return true if the number is less or equal to 1, or greater or equal to 10.*/
+   public boolean in1To10(int n, boolean outsideMode) {
+       if( ! outsideMode && (n>=1  && n<=10)){
+           return true;
+       }else if (outsideMode && (n<=1  || n>=10)){
+           return true;
+       }
+       return false;
+   }
 
+
+
+   /**Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+
+    stringTimes("Hi", 2) → "HiHi"
+    stringTimes("Hi", 3) → "HiHiHi"
+    stringTimes("Hi", 1) → "Hi"*/
+  public static String stringTimes(String str,int n) {
+      String s = "";
+      for (int i = 0; i < n; i++) {
+          s = s + str;
+      }
+      return s;
+  }
     public static void main(String[] args) {
         System.out.println(CodingBat.blueTicket(9,1,0));
         System.out.println(CodingBat.shareDigit(11,22));
@@ -130,6 +154,7 @@ public static boolean shareDigit(int a, int b) {
         System.out.println(CodingBat.sortaSum(2,5));
         System.out.println(CodingBat.alarmClock(6,false));
         System.out.println(CodingBat.love6(5,9));
+        System.out.println(CodingBat.stringTimes("hello",2));
 
  }
 
