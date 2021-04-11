@@ -33,7 +33,7 @@ Constraints:
 
 
         public static void main(String[] args){
-//            System.out.println(hackerRank.sockMerchant(10,[1,2,5,6,7,2,3,4,5,5]));
+//            System.out.println(hackerRank.sockMerchant(102[5,[6,7,2,3,4,5,5]));
         }
         }
 
