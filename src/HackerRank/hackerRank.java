@@ -1,6 +1,7 @@
 package HackerRank;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.math.*;
 import java.security.*;
 import java.text.*;
@@ -33,7 +34,9 @@ Constraints:
 
 
         public static void main(String[] args){
-//            System.out.println(hackerRank.sockMerchant(102[5,[6,7,2,3,4,5,5]));
+           int[] ar = new int []{1,2,6,7,7};
+
+  System.out.println(hackerRank.sockMerchant(5,ar));
         }
         }
 
