@@ -50,6 +50,7 @@ Constraints:
            int[] ar = new int []{1,2,6,7,7};
 
   System.out.println(hackerRank.sockMerchant(5,ar));
+            System.out.println(hackerRank.pageCount(8,7));
         }
         }
 
