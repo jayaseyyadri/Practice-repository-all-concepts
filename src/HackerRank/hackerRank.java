@@ -1,13 +1,6 @@
 package HackerRank;
-
-import java.io.*;
-import java.lang.reflect.Array;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+
 
 public class hackerRank {
 /**There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
@@ -38,9 +31,7 @@ Constraints:
      *
      * */
     static int pageCount(int n, int p) {
-        /*
-         * Write your code here.
-         */
+
         int totalPageCount = n / 2;
         int pageCountFromFront = p / 2;
         int pageCountFromBack = totalPageCount - pageCountFromFront;
@@ -49,7 +40,7 @@ Constraints:
         public static void main(String[] args){
            int[] ar = new int []{1,2,6,7,7};
 
-  System.out.println(hackerRank.sockMerchant(5,ar));
+            System.out.println(hackerRank.sockMerchant(5,ar));
             System.out.println(hackerRank.pageCount(8,7));
         }
         }
