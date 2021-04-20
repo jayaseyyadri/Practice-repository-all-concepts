@@ -151,12 +151,12 @@ public static boolean shareDigit(int a, int b) {
   /**
    We'll say a number is special if it is a multiple of 11 or if it is one more than a multiple of 11. Return true if the given non-negative number is special*/
 
-  static boolean isMutiple11(int n){
+  static boolean isMultiple11(int n){
 //      boolean multiple = (n % 11==0);
-          if(n % 11 == 0 ||(n >(n+1)) && n%11==0){
-          return true;
+          if(n % 11 == 0 ||( n%11<=1)){
+              return true;
           }
-        return false;
+          return false;
       }
 
 
@@ -170,7 +170,7 @@ public static boolean shareDigit(int a, int b) {
         System.out.println(CodingBat.alarmClock(6,false));
         System.out.println(CodingBat.love6(5,9));
         System.out.println(CodingBat.stringTimes("hello",2));
-        System.out.println(CodingBat.isMutiple11(34));
+        System.out.println(CodingBat.isMultiple11(34));
 
  }
 
