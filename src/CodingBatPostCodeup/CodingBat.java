@@ -159,6 +159,18 @@ public static boolean shareDigit(int a, int b) {
           return false;
       }
 
+/**
+ Return true if the given non-negative number is 1 or 2 more than a multiple of 20*/
+
+public static boolean more20(int n) {
+    if ( n%20==1 || n%20==2){
+        return true;
+    }
+    return false;
+
+}
+
+
 
     public static void main(String[] args) {
         System.out.println(CodingBat.blueTicket(9,1,0));
@@ -171,6 +183,7 @@ public static boolean shareDigit(int a, int b) {
         System.out.println(CodingBat.love6(5,9));
         System.out.println(CodingBat.stringTimes("hello",2));
         System.out.println(CodingBat.isMultiple11(34));
+        System.out.println(CodingBat.more20(24));
 
  }
 
