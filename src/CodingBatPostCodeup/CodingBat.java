@@ -179,6 +179,14 @@ public static boolean multipleOf3or5(int n) {
     }
     return false;
 }
+/**Return true if the given non-negative number is 1 or 2 less than a multiple of 20*/
+public static boolean less20(int n) {
+    if(n%20==18 || n%20==19){
+        return true;
+    }
+    return false;
+}
+
     public static void main(String[] args) {
         System.out.println(CodingBat.blueTicket(9,1,0));
         System.out.println(CodingBat.shareDigit(11,22));
@@ -192,6 +200,7 @@ public static boolean multipleOf3or5(int n) {
         System.out.println(CodingBat.isMultiple11(34));
         System.out.println(CodingBat.more20(24));
         System.out.println(CodingBat.multipleOf3or5(55));
+        System.out.println(CodingBat.less20(44));
  }
 
 
