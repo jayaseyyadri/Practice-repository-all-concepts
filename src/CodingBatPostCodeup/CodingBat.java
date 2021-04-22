@@ -170,8 +170,15 @@ public static boolean more20(int n) {
 
 }
 
-
-
+/**Return true if the given non-negative number is a multiple of 3 or 5, but not both.*/
+public static boolean multipleOf3or5(int n) {
+    if(n % 3 == 0 && n % 5 != 0){
+        return true;
+    }else if(n % 3!=0 && n % 5 == 0){
+        return true;
+    }
+    return false;
+}
     public static void main(String[] args) {
         System.out.println(CodingBat.blueTicket(9,1,0));
         System.out.println(CodingBat.shareDigit(11,22));
@@ -184,7 +191,7 @@ public static boolean more20(int n) {
         System.out.println(CodingBat.stringTimes("hello",2));
         System.out.println(CodingBat.isMultiple11(34));
         System.out.println(CodingBat.more20(24));
-
+        System.out.println(CodingBat.multipleOf3or5(55));
  }
 
 
