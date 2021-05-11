@@ -1,6 +1,6 @@
 package mooc;
 
-
+/**Create a method called average that calculates the average of the numbers passed as parameters*/
 public class Average {
 
     // implement the sum method here again
