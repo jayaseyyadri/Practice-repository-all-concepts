@@ -3,6 +3,12 @@ package mooc;
 
 public class StarSign {
 
+/**Define a method called printStars that prints the given number of stars a
+ * Define a method called printSquare(int size) that prints a suitable square with the help of the printStars method.
+ * Write a method called printRectangle(int width, int height) that prints the correct rectangl
+ * Create a method called printTriangle(int size) that prints a triangle */
+
+
     public static void main(String[] args) {
 
         printStars(3);
