@@ -2,7 +2,9 @@ package mooc;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+/**when the program that prints the number of values on the list after  user chooses to quit the program .
 
+ */
     public class ListSize {
 
         public static void main(String[] args) {
